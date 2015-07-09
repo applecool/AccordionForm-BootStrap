@@ -113,3 +113,11 @@ body{
 .no-js .accordionItem.is-collapsed {
   max-height: 900px;
 }
+
+.animateIn {
+  animation: accordionIn 0.65s normal ease-in-out both 1;
+}
+
+.animateOut {
+  animation: accordionOut 0.75s alternate ease-in-out both 1;
+}

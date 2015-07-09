@@ -1,0 +1,18 @@
+/* css document */
+
+*{
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+
+body{
+  font-family: 'Sans-serif';
+}
+
+.heading-primary {
+  font-size: 2em;
+  padding: 2em;
+  text-align: center;
+  color: #3b3b3b;
+}

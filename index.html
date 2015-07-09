@@ -6,6 +6,25 @@
   <link rel="stylesheet" src="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/reset.css">
 </head>
+<body>
+  <div class="container">
+    <h1 class="heading-primary">Accordion Checkout Form Version 0.1 </h1>
+    <div class="accordion">
+      <dl>
+        <dt><!-- accordion tab 1 -->
+          <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordion-Title js-accordionTrigger">Delivery and Pickup Options</a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+        </dd><!--end accordion tab 1 -->
 
+        <dt><!-- accordion tab 2 -->
+          <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">Shipping Information</a>
+        </dt>
+        <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+        </dd> <!-- end accordion tab 2 -->
+      </dl>
+    </div><!-- end accordion -->
+  </div> <!-- end container -->
+</body>
 <script src="js/accordion.js"></script>
 </html>

@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>Accordion Form - Checkout</title>
-  <link rel="stylesheet" src="css/main.css">
-  <link rel="stylesheet" src="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
       <dl> <!-- description list -->
 
         <dt><!-- accordion tab 1 - Delivery and Pickup Options -->
-          <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordion-Title js-accordionTrigger">Delivery and Pickup Options</a>
+          <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Delivery and Pickup Options</a>
         </dt>
         <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
           <p>One can insert a div here and add the product image and the description of the product. Quantity, Cost.</p>
@@ -112,12 +112,96 @@
           <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">Payment Information</a>
         </dt>
         <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+          <div class="container-fluid" style="padding-top: 20px;">
+            <p class="headings">Billing Information</p>
+            <form class="main-container">
+                <div class="row">
+               <div class="col-xs-4">
+                  <label for="fullname" class="label-style">Full Name</label>
+              </div>
+               <div class="form-group col-lg-4">
+                 <input type="text" id="fullname" class="form-control"   placeholder="Enter your full name" required>
+             </div>
+          </div>
+
+
+           <div class="row">
+             <div class="col-xs-4">
+               <label for="companyname" class="label-style">Company Name</label>
+               </div>
+             <div class="form-group col-lg-4">
+           <input type="text" id="companyname" class="form-control" placeholder="Enter Company Name (optional)" required>
+             </div>
+           </div>
+                              <div class="row">
+             <div class="col-xs-4">
+               <label for="phonenumber" class="label-style">Phone  Number</label>
+               </div>
+             <div class="form-group col-lg-4">
+           <input type="text" id="phonenumber" class="form-control" placeholder="Enter Phone Number" required>
+             </div>
+           </div>
+            <div class="row">
+             <div class="col-xs-4">
+               <label for="address-line1" class="label-style">Address Line 1</label>
+               </div>
+             <div class="form-group col-lg-4">
+           <input type="text" id="address-line1" class="form-control" placeholder="Enter Address" required>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-xs-4">
+               <label for="address-line2" class="label-style">Line 2</label>
+               </div>
+             <div class="form-group col-lg-4">
+           <input type="text" id="address-line2" class="form-control" placeholder="Apt, Suite, Bldg (optional)" required>
+             </div>
+           </div>
+          <div class="row">
+             <div class="col-xs-4">
+               <label for="city" class="label-style">City</label>
+               </div>
+             <div class="form-group col-lg-4">
+           <input type="text" id="city" class="form-control" placeholder="Enter City" required>
+             </div>
+           </div>
+          <div class="row">
+             <div class="col-xs-4">
+               <label for="state" class="label-style">State</label>
+               </div>
+             <div class="form-group col-lg-4">
+           <input type="text" id="state" class="form-control" placeholder="Enter State" required>
+             </div>
+           </div>
+          <div class="row">
+             <div class="col-xs-4">
+               <label for="country" class="label-style">Country</label>
+               </div>
+             <div class="form-group col-lg-4">
+           <input type="text" id="country" class="form-control" placeholder="Enter Country" required>
+             </div>
+           </div>
+          <div class="row">
+             <div class="col-xs-4">
+               <label for="zipcode" class="label-style">Zip Code</label>
+               </div>
+             <div class="form-group col-lg-4">
+           <input type="text" id="address-line2" class="form-control" placeholder="Enter Zip Code" required>
+             </div>
+           </div>
+              <div class="button-container">
+                       <button class="btn btn-success" type="submit">Submit</button>
+                       <button class="btn btn-warning" type="reset">Reset</button>
+               </div>
+         </form>
+       </div>
         </dd> <!-- end accordion tab 3 -->
 
       </dl> <!-- end description list -->
     </div><!-- end accordion -->
   </div> <!-- end container -->
+  <script src="js/modernizr.js"></script>
+  <script src="js/accordion.js"></script>
 </body>
-<script src="js/modernizr.js"></script>
-<script src="js/accordion.js"></script>
+
 </html>

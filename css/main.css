@@ -1,11 +1,10 @@
-/* css document */
 @import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
-*{
+* {
   box-sizing: border-box;
   border-radius: 5px;
 }
 
-body{
+body {
   font-family: 'Libre Baskerville';
 }
 
@@ -13,7 +12,6 @@ body{
   font-size: 2em;
   padding: 2em;
   text-align: center;
-  /*color: #3b3b3b;*/
 }
 
 .accordion dl,
@@ -51,12 +49,6 @@ body{
   padding: 2em 0 2em 0;
 }
 
-/*.accordion-content{
-  height: 800px !important;
-  overflow:
-  max-height: 960px;
-} */
-
 .accordionTitle,
 .accordion__Heading {
   background-color: #099DF6;
@@ -71,12 +63,11 @@ body{
           transition: background-color 0.5s ease-in-out;
   border-bottom: 1px solid #30bb64;
 }
-
 .accordionTitle:before,
 .accordion__Heading:before {
   content: "+";
   font-size: 1.5em;
-  line-height: 0.5em;
+  line-height: 0.9em;
   float: left;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
           transition: transform 0.3s ease-in-out;
@@ -92,8 +83,9 @@ body{
 }
 .accordionTitleActive:before,
 .accordionTitle.is-expanded:before {
-    -webkit-transform: rotate(-225deg);
-            transform: rotate(-225deg);
+  -webkit-transform: rotate(-225deg);
+      -ms-transform: rotate(-225deg);
+          transform: rotate(-225deg);
 }
 
 .accordionItem {
@@ -105,14 +97,14 @@ body{
 }
 @media screen and (min-width: 48em) {
   .accordionItem {
-    max-height: 1.5em;
+    max-height: 15em;
     -webkit-transition: max-height 0.5s;
             transition: max-height 0.5s;
   }
 }
 
 .accordionItem.is-collapsed {
-  max-height:0;
+  max-height: 0;
 }
 
 .no-js .accordionItem.is-collapsed {
@@ -158,7 +150,6 @@ body{
             transform: scale(1);
   }
 }
-
 @-webkit-keyframes accordionOut {
   0% {
     opacity: 1;
@@ -171,7 +162,6 @@ body{
             transform: scale(0.9) rotateX(-60deg);
   }
 }
-
 @keyframes accordionOut {
   0% {
     opacity: 1;
@@ -183,4 +173,23 @@ body{
     -webkit-transform: scale(0.9) rotateX(-60deg);
             transform: scale(0.9) rotateX(-60deg);
   }
+}
+
+/*label styles */
+.label-style{
+	float: left;
+	margin-right: 15px;
+	padding-top: 5px;
+	padding-left: 100px;
+}
+
+/* form headings */
+.headings {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* button styles */
+.button-container {
+  text-align: center;
 }

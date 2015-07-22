@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+/* position of the hint */
+.hint {
+  display: inline-block;
+  position: relative;
+  margin-left: 0.5em;
+  margin-top: 0.3em;
+}
+
+  /* background style for 'i' */
+ .hint-icon {
+  background: #099DF6;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  font-style: normal;
+  font-family: 'Libre Baskerville';
+  height: 20px;
+  line-height: 1.3em;
+  text-align: center;
+  width: 20px;
+  }
+
+  /* hint icon hover style */
+  .hint-icon:hover {
+    background: #1f8ac9;
+  }
+
+/* Displays the hint. important! Do not remove. */
+.hint:hover .hint-description, .hint:focus .hint-description {
+  display: inline-block;
+
+}
+
+/* position of the hint  */
+.hint-description {
+  display: none;
+  background: #3b3b3b;
+  border: 1px solid #099DF6;
+  border-radius: 3px;
+  font-size: 0.8em;
+  color: #ffffff;
+  font-weight: bold;
+  /*padding: 1em; */
+  position: absolute;
+  left: 30px;
+  top: -15px;
+  width: 180px;
+  height: auto;
+}
+
+ /* styling for the arrow */
+ .hint-description:before, .hint-description:after {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 15px;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #099DF6;
+}
+
+/* overlay styling */
+.hint-description:after {
+  left: -10px;
+  border-right-color: #3b3b3b;
+}

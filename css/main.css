@@ -67,7 +67,8 @@ body{
   display: block;
   text-decoration: none;
   color: #fff;
-  transition: background-color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+          transition: background-color 0.5s ease-in-out;
   border-bottom: 1px solid #30bb64;
 }
 
@@ -77,7 +78,8 @@ body{
   font-size: 1.5em;
   line-height: 0.5em;
   float: left;
-  transition: transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+          transition: transform 0.3s ease-in-out;
 }
 .accordionTitle:hover,
 .accordion__Heading:hover {
@@ -90,19 +92,22 @@ body{
 }
 .accordionTitleActive:before,
 .accordionTitle.is-expanded:before {
-    transform: rotate(-225deg);
+    -webkit-transform: rotate(-225deg);
+            transform: rotate(-225deg);
 }
 
 .accordionItem {
   height: auto;
   overflow: auto;
   max-height: 900px;
-  transition: max-height 1s;
+  -webkit-transition: max-height 1s;
+          transition: max-height 1s;
 }
 @media screen and (min-width: 48em) {
   .accordionItem {
     max-height: 1.5em;
-    transition: max-height 0.5s;
+    -webkit-transition: max-height 0.5s;
+            transition: max-height 0.5s;
   }
 }
 
@@ -115,11 +120,13 @@ body{
 }
 
 .animateIn {
-  animation: accordionIn 0.65s normal ease-in-out both 1;
+  -webkit-animation: accordionIn 0.65s normal ease-in-out both 1;
+          animation: accordionIn 0.65s normal ease-in-out both 1;
 }
 
 .animateOut {
-  animation: accordionOut 0.75s alternate ease-in-out both 1;
+  -webkit-animation: accordionOut 0.75s alternate ease-in-out both 1;
+          animation: accordionOut 0.75s alternate ease-in-out both 1;
 }
 
 @keyframes accordionIn {

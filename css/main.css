@@ -79,7 +79,8 @@ body {
 }
 @media screen and (min-width: 48em) {
   .accordionItem {
-    max-height: 900px; /* this allows the accordion form to expand to its fullest */
+    max-height: 900px;
+    /* this allows the accordion form to expand to its fullest */
     -webkit-transition: max-height 0.5s;
     transition: max-height 0.5s;
   }

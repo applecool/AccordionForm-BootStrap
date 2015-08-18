@@ -202,3 +202,19 @@ body {
   text-align: center;
   margin-bottom: 5px;
 }
+/* collapse all for summary  */
+.summary{
+  margin-left: 600px;
+}
+
+.expand{
+  background-color: #099DF6;
+  text-align: center;
+  box-shadow: none;
+  display: inline-block;
+  color: white;
+}
+
+.expand:hover{
+  background-color: #38CC70;
+}

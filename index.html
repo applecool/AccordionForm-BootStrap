@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/hint.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -154,7 +155,7 @@
 
         <dt>
           <!-- accordion tab 3 - Payment Info -->
-          <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">Payment Information</a>
+         <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">Payment Information</a>
         </dt>
         <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
           <div class="container-fluid" style="padding-top: 20px;">
@@ -279,9 +280,9 @@
         </dd>
         <!-- end accordion tab 3 -->
 
-      </dl>
+     </dl>
       <!-- end description list -->
-    </div>
+   </div>
     <!-- end accordion -->
   </div>
   <!-- end container -->
@@ -291,9 +292,9 @@
   </div>
 
   <script src="js/modernizr.js"></script>
-  <script src="js/accordion.js"></script>
+  <script src="js/accordion-new.js"></script>
   <script>
-   $('.expand').click(function(){
+  /* $('.expand').click(function(){
      if($('.accordionItem.is-collapsed').css('max-height') == '0px'){
        $('.accordionItem.is-collapsed').css({
          'max-height': '900px';
@@ -303,8 +304,11 @@
          'max-height': '0px';
        });
      }
-   });
-  </script>
+   }); */
+ </script>
+
+<!-- Used some part of the code from Chris Wright (http://codepen.io/chriswrightdesign/)'s Pen  -->
+
 </body>
 
 </html>

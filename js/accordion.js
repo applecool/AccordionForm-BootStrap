@@ -34,19 +34,39 @@
   //function
   switchAccordion = function(e) {
     e.preventDefault();
-    var thisAnswer = e.target.parentNode.nextElementSibling;
-    var thisQuestion = e.target;
+
+    var questions = [],
+        answers = [];
+
+    if($(e.target).hasClass('expand')){
+      #('.accordion-title').each(function(index){
+        questions.push(this);
+        answers.push(this.parentNode.nextElementSibling);
+      });
+    }else{
+      questions.push(e.target);
+      answers.push(e.target.parentNode.nextElementSibling);
+    }
+
+    /*var thisAnswer = e.target.parentNode.nextElementSibling;
+    var thisQuestion = e.target; */
+    for(var i=0, len= questions.length; i<len; i++){
+      var thisQuestion = questions[i];
+      var thisAnswer = answers[i];
+
     if (thisAnswer.classList.contains('is-collapsed')) {
       setAccordionAria(thisQuestion, thisAnswer, 'true');
     } else {
       setAccordionAria(thisQuestion, thisAnswer, 'false');
     }
+
     thisQuestion.classList.toggle('is-collapsed');
     thisQuestion.classList.toggle('is-expanded');
     thisAnswer.classList.toggle('is-collapsed');
     thisAnswer.classList.toggle('is-expanded');
 
     thisAnswer.classList.toggle('animateIn');
+   }
   };
   for (var i = 0, len = accordionToggles.length; i < len; i++) {
     if (touchSupported) {
@@ -57,4 +77,5 @@
     }
     accordionToggles[i].addEventListener('click', switchAccordion, false);
   }
+  $('.expand').on('click', switchAccordion);
 })();

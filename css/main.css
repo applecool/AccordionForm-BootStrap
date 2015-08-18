@@ -190,11 +190,3 @@ body {
 .expand:hover{
   background-color: #38CC70;
 }
-
-.expand-All{
-  max-height: 900px;
-}
-
-.close-All{
-  max-height: 0px;
-}

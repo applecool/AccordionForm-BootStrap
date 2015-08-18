@@ -289,6 +289,20 @@
   <div class="summary">
     <button class="expand btn btn-lg"> Collapse All for Summary</button>
   </div>
+
+  <script>
+   $('.expand').click(function(){
+     if($('.accordionItem.is-collapsed').css('max-height') == '0px'){
+       $('.accordionItem.is-collapsed').css({
+         'max-height': '900px';
+       });
+     }else if($('.accordionItem.is-collapsed').css('max-height') == '900px'){
+       $('.accordionItem.is-collapsed').css({
+         'max-height': '0px';
+       });
+     }
+   });
+  </script>
   <script src="js/modernizr.js"></script>
   <script src="js/accordion.js"></script>
 </body>

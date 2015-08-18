@@ -178,3 +178,11 @@ body {
 .summary{
   margin-left: 600px;
 }
+
+.expand{
+  background-color:  #099DF6;
+  text-align: center;
+  box-shadow: none;
+  display: inline-block;
+  color: white;
+}

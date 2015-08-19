@@ -3,58 +3,44 @@
   box-sizing: border-box;
   border-radius: 5px;
 }
-
 body {
   font-family: 'Libre Baskerville';
 }
-
 .heading-primary {
   font-size: 2em;
   padding: 2em;
   text-align: center;
 }
-
-.accordion dl,
-.accordion-list {
+.accordion dl, .accordion-list {
   border: 1px solid #ddd;
 }
-
-.accordion dl:after,
-.accordion-list:after {
+.accordion dl:after, .accordion-list:after {
   content: "";
   display: block;
   height: 1em;
   width: 100%;
   background-color: #099DF6;
 }
-
-.accordion dd,
-.accordion__panel {
+.accordion dd, .accordion__panel {
   background-color: #eee;
   font-size: 1em;
   line-height: 1.5em;
 }
-
 .accordion p {
   padding: 1em 2em 1em 2em;
 }
-
 .accordion {
   position: relative;
   background-color: #eee;
 }
-
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 2em 0 2em 0;
 }
-
-.accordionTitle,
-.accordion__Heading {
+.accordionTitle, .accordion__Heading {
   background-color: #099DF6;
   /*text-align: center; */
-
   text-indent: 3px;
   font-weight: 700;
   padding: 2em;
@@ -65,9 +51,7 @@ body {
   transition: background-color 0.5s ease-in-out;
   border-bottom: 1px solid #30bb64;
 }
-
-.accordionTitle:before,
-.accordion__Heading:before {
+.accordionTitle:before, .accordion__Heading:before {
   content: "+";
   font-size: 1.5em;
   line-height: 0.9em;
@@ -75,24 +59,17 @@ body {
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
 }
-
-.accordionTitle:hover,
-.accordion__Heading:hover {
+.accordionTitle:hover, .accordion__Heading:hover {
   background-color: #38CC70;
 }
-
-.accordionTitleActive,
-.accordionTitle.is-expanded {
+.accordionTitleActive, .accordionTitle.is-expanded {
   background-color: #38CC70;
 }
-
-.accordionTitleActive:before,
-.accordionTitle.is-expanded:before {
+.accordionTitleActive:before, .accordionTitle.is-expanded:before {
   -webkit-transform: rotate(-225deg);
   -ms-transform: rotate(-225deg);
   transform: rotate(-225deg);
 }
-
 .accordionItem {
   height: auto;
   overflow: auto;
@@ -100,7 +77,6 @@ body {
   -webkit-transition: max-height 1s;
   transition: max-height 1s;
 }
-
 @media screen and (min-width: 48em) {
   .accordionItem {
     max-height: 900px;
@@ -108,25 +84,20 @@ body {
     transition: max-height 0.5s;
   }
 }
-
 .accordionItem.is-collapsed {
   max-height: 0;
 }
-
 .no-js .accordionItem.is-collapsed {
   max-height: 900px;
 }
-
 .animateIn {
   -webkit-animation: accordionIn 0.65s normal ease-in-out both 1;
   animation: accordionIn 0.65s normal ease-in-out both 1;
 }
-
 .animateOut {
   -webkit-animation: accordionOut 0.75s alternate ease-in-out both 1;
   animation: accordionOut 0.75s alternate ease-in-out both 1;
 }
-
 @-webkit-keyframes accordionIn {
   0% {
     opacity: 0;
@@ -141,7 +112,6 @@ body {
     transform: scale(1);
   }
 }
-
 @keyframes accordionIn {
   0% {
     opacity: 0;
@@ -156,7 +126,6 @@ body {
     transform: scale(1);
   }
 }
-
 @-webkit-keyframes accordionOut {
   0% {
     opacity: 1;
@@ -169,7 +138,6 @@ body {
     transform: scale(0.9) rotateX(-60deg);
   }
 }
-
 @keyframes accordionOut {
   0% {
     opacity: 1;
@@ -182,6 +150,7 @@ body {
     transform: scale(0.9) rotateX(-60deg);
   }
 }
+
 /*label styles */
 
 .label-style {
@@ -190,31 +159,33 @@ body {
   padding-top: 5px;
   padding-left: 100px;
 }
+
 /* form headings */
 
 .headings {
   text-align: center;
   font-weight: bold;
 }
+
 /* button styles */
 
 .button-container {
   text-align: center;
   margin-bottom: 5px;
 }
+
 /* collapse all for summary  */
-.summary{
+
+.summary {
   margin-left: 600px;
 }
-
-.expand{
+.expand {
   background-color: #099DF6;
   text-align: center;
   box-shadow: none;
   display: inline-block;
   color: white;
 }
-
-.expand:hover{
+.expand:hover {
   background-color: #38CC70;
 }

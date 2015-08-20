@@ -36,11 +36,11 @@
     e.preventDefault();
 
     var questions = [],
-        answers = [];
+      answers = [];
 
     //if expand-all button is clicked, then push all questions and answers into respective arrays
-    if($(e.target).hasClass('expand')) {
-      $('.accordion-title').each( function(index) {
+    if ($(e.target).hasClass('expand')) {
+      $('.accordion-title').each(function(index) {
         questions.push(this);
         answers.push(this.parentNode.nextElementSibling);
       });

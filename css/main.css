@@ -84,7 +84,9 @@ body {
     transition: max-height 0.5s;
   }
 }
+
 /*very important class. Change the values to vary the height of the opening frame of accordion tab*/
+
 .accordionItem.is-collapsed {
   max-height: 0;
 }
